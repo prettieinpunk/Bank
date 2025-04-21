@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body {
+  font-family: 'VT323', monospace;
+  background-color: #1a001a;
+  color: #ff77ff;
+  margin: 0;
+  padding: 2rem;
+  cursor: url('/Bank/8-Bit\ Heart\ \(normal\ select\).cur'), auto;
+}
+
+h1, h2 {
+  color: #ff99ff;
+  text-shadow: 0 0 5px #ff00ff;
+}
+
+input, button {
+  font-family: 'VT323', monospace;
+  background-color: #330033;
+  color: #ffffff;
+  border: 1px solid #ff77ff;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1.1rem;
+  border-radius: 10px; /* Rounding the boxes and buttons */
+}
+
+button {
+  background-color: #ff00ff;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border-radius: 10px; /* Rounded button */
+}
+
+button:hover {
+  background-color: #ff33ff;
+}
+
+a {
+  color: #ff66cc;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+form, section, table {
+  margin-bottom: 2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #240024;
+  border-radius: 10px; /* Rounded table borders */
+}
+
+th, td {
+  border: 1px solid #ff77ff;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#app {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Flashing effect for the register page */
+@keyframes registerFlash {
+  0% {
+    background-color: #1a001a;
+  }
+  50% {
+    background-color: #a2c9e8; /* Light blue */
+  }
+  100% {
+    background-color: #ff66cc; /* Lighter pink */
+  }
+}
+
+.register-flash {
+  animation: registerFlash 3s ease-in-out infinite;
+}
